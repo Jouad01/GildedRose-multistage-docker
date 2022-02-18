@@ -5,9 +5,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class AppTest {
+public class TestGildedRose {
     @Test
-    public void crearAgedBrie() {
+    public void TestAgedBrie() {
 
         AgedBrie cheese = new AgedBrie("Aged Brie", 2, 0);
         assertEquals("Aged Brie", cheese.getName());
@@ -25,7 +25,7 @@ public class AppTest {
     }
 
     @Test
-    public void crearItem() {
+    public void TestItem() {
 
         Item item = new Item("+5 Dexterity Vest", 10, 20);
 
@@ -36,11 +36,19 @@ public class AppTest {
     }
 
     @Test
-    public void crearNormalItem() {
+    public void TestNormalItem() {
 
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 20);
         assertEquals("+5 Dexterity Vest", normal.getName());
         assertEquals(10, normal.getSell_in(), 0);
         assertEquals(20, normal.getQuality(), 0);
+    }
+    @Test
+    public void TestSulfuras() {
+
+        Sulfuras sulfuras = new Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80);
+        assertEquals("Sulfuras, Hand of Ragnaros", sulfuras.getName());
+        assertEquals(0, sulfuras.getSell_in(), 0);
+        assertEquals(80, sulfuras.getQuality(), 0);
     }
 }
