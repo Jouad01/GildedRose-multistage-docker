@@ -1,4 +1,6 @@
-import edu.poniperro.gildedrose.*;
+package edu.poniperro.gildedrose;
+
+import edu.poniperro.gildedrose.domain.*;
 
 import java.util.List;
 

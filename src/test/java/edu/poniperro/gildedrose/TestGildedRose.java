@@ -3,6 +3,7 @@ package edu.poniperro.gildedrose;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import edu.poniperro.gildedrose.domain.*;
 import org.junit.Test;
 
 public class TestGildedRose {
